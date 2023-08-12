@@ -1,0 +1,102 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000;
+ 
+  padding: 10px;
+  color: #fff;
+}
+
+/* Style pour chaque section du footer */
+.footerSection {
+  flex: 1;
+  margin: 0;
+
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    align-content: center;
+
+}
+.footerContainer{
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+}
+.footerTitre{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.65;
+    letter-spacing: 4px;
+   
+}
+
+.espaceTemps{
+    padding-bottom: 15px;
+    margin-top: 10px;
+}
+.espaceTempsTxt{
+    margin-top: 20px;
+}
+.footerText{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 1.65;
+    font-size: 13px;
+    
+}
+
+.highlight {
+    background-color: #fffef7; /* Couleur de mise en évidence */
+    padding: 3px 5px;
+    border-radius: 3px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+.footerLink {
+    color: #fff; /* Couleur du texte en blanc */
+    text-decoration: none; /* Supprime le soulignement du lien */
+    transition: color 0.3s ease-in-out; /* Transition de couleur au survol */
+    cursor: pointer;
+}
+  
+  .footerLink:hover {
+    color: #ffd700; /* Couleur du texte en jaune au survol */
+  }
+  .firstSection{
+    max-width: 300px;
+  }
+
+
+
+
+  .footerLogoSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Ajustez l'espacement par rapport aux sections précédentes */
+  }
+  
+  .footerLogo {
+    width: 80px; /* Ajustez la taille de votre logo */
+  }
+  
+  .footerLogoText {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+  }

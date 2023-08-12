@@ -1,0 +1,43 @@
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+    background-color: transparent;
+    overflow: hidden;
+  }
+  
+  .video-player {
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* Réglez l'opacité selon vos préférences */
+  }
+  
+  .controls {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.3); /* Fond semi-transparent pour les boutons */
+  }
+  
+  .play-button,
+  .mute-button {
+    color: white;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .mute-button {
+    align-self: flex-end;
+  }
+  .vjs-big-play-centered{
+
+  }
+  .video-js{
+    height: 0!important;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 10px;
+    background-color: #fff!important;
+  }

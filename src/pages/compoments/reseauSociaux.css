@@ -1,0 +1,13 @@
+.social-icons{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: -5%;
+
+}
+
+.social-icon{
+    padding: 5px;
+    color: aliceblue;
+}

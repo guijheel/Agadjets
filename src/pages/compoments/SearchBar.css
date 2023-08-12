@@ -1,0 +1,30 @@
+/* SearchBar.css */
+
+.search-container {
+  display: flex;
+  align-items: center;
+  width: 60%;
+  margin: 0 auto;
+
+  padding: 10px;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-icon-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.close-icon {
+  margin-left: 10px;
+  cursor: pointer;
+  color: #999;
+}
