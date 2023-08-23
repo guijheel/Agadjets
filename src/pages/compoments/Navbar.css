@@ -1,0 +1,34 @@
+.navbarContain{
+    z-index: 1;
+    position:  relative;
+}
+
+@media (max-width: 700px) {
+    .navbarText {
+     display: none!important;
+    } 
+    .navbarIcons{
+        display: none!important;
+
+    }
+    .logoNav{
+        margin-left: 0px!important;
+    }
+    .dropdown{
+        display: none!important;
+    }
+    .iconsMenu{
+        position: relative;
+        top: 55px;
+      left: 90%;
+      }
+      .divMenu{
+        display: block;
+      }
+      .navbarContainer{
+        margin-top: -20px;
+      }
+      .navbarMobile{
+        z-index: 3;
+      }
+  }

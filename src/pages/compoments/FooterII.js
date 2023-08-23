@@ -29,7 +29,7 @@ const FooterII = () => {
         <div className="footerII">
         <div className="footerSectionIIII ">
         <img src="/logoPage.jpg" alt="logo" className="LogoFooter" />
-        <h1 className="TitreFooter">AGAJETS
+        <h1 className="TitreFooter">AGAGETS
         <p5 className="txtPayment posPayment">© 2023</p5>
         </h1>
         

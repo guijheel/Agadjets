@@ -23,7 +23,6 @@ const Homepage = () => {
         <Satisfation/>
         <Footer/>
         <FooterII/>
-        <AppleStyleCard/>
     </div>
   );
 };

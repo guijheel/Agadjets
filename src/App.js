@@ -8,7 +8,7 @@ function App() {
   return (
     <div style={styles.containerFull}>
           <NextUIProvider>
-          <Homepage/>
+           <Homepage/>
           </NextUIProvider>
         
         
