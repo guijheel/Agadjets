@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 import VideoJS from './VideoJS';
@@ -6,37 +6,26 @@ import VideoJS from './VideoJS';
 
 export const Video = () => {
   const playerRef = React.useRef(null);
+  const [viewportSize, setViewportSize] = useState({ width: window.innerWidth, height: window.innerHeight });
 
-  const videoJsOptions = {
-    autoplay: true,
-    controls: false,
-    muted: true,
-    responsive: true,
-    fluid: true,
-    
-    sources: [{
-      src: 'videos/promovideo.mp4',
-      type: 'video/mp4'
-    }]
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      setViewportSize({ width: window.innerWidth, height: window.innerHeight });
+    };
 
-  const handlePlayerReady = (player) => {
-    playerRef.current = player;
+    window.addEventListener('resize', handleResize);
 
-    // You can handle player events here, for example:
-    player.on('waiting', () => {
-      videojs.log('player is waiting');
-    });
-
-    player.on('dispose', () => {
-      videojs.log('player will dispose');
-    });
-  };
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
 
   return (
     <>
       
-      <VideoJS options={videoJsOptions} onReady={handlePlayerReady} />
+      <video autoPlay playsInline muted  width={viewportSize.width}>
+  <source src="videos/promovideo.mp4" type="video/mp4" />
+</video>
       
     </>
   );
