@@ -2,8 +2,16 @@
     z-index: 1;
     position:  relative;
 }
-
-@media (max-width: 700px) {
+.navbarMobile{
+  background-color: rgba(255, 255, 255, 0.20);
+  backdrop-filter: blur(8px);
+  display: none!;
+  /* Fond transparent pour le menu */
+}
+.navbarMobile:active{
+  display: none!;
+}
+@media (max-width: 767px) {
     .navbarText {
      display: none!important;
     } 
@@ -20,7 +28,7 @@
     .iconsMenu{
         position: relative;
         top: 55px;
-      left: 90%;
+        left: 90%;
       }
       .divMenu{
         display: block;
@@ -31,4 +39,116 @@
       .navbarMobile{
         z-index: 3;
       }
+      .colorIcons{
+        color: aliceblue;
+      }
+.navbarMobile {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 20%); /* Fond transparent */
+ 
+  z-index: 999; /* Assurez-vous que le menu burger s'affiche au-dessus du contenu principal */
+  opacity: 0; /* Le menu est initialement invisible */
+  transform: translateY(-100%); /* Le menu est initialement en dehors de l'écran vers le haut */
+  transition: opacity 0.3s ease, transform 0.3s ease; /* Ajoutez des transitions aux propriétés */
+}
+
+.navbarMobile.active {
+  opacity: 1; /* Le menu devient visible */
+  transform: translateY(0); /* Le menu apparaît en se déplaçant vers le bas */
+}
+
+.navbarMobile ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbarMobile li {
+  margin: 10px 0;
+}
+.listItem{
+  padding-top: 15px;
+}
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  color: #ff5733; /* Couleur au survol */
+}
+.navbarMobileTitle{
+  text-align: center;
+  font-family:"'Quicksand', sans-serif";
+  color: aliceblue;
+}
+.closebtn{
+  color: aliceblue;
+  animation-delay: 5s;
+}
+.closebtn:hover{
+  color: #ffd700; 
+}
+.btn_container{
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 97%;
+    height: 225px;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse
+
+}
+
+.navbarMobileTitle:hover {
+  color: #ffd700; /* Couleur au survol */
+}
+.btnMenuRecherche{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-right: 2%;
+  margin-bottom: -23%;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.endMenu{
+  display: flex;
+  align-items: center;
+    /* width: 375px; */
+    height: 375px;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+}
   }
+
+  @media (min-width: 768px) {
+
+    .social-icons{
+      display: none!important;
+    }
+    .btnMenuRecherche{
+      display: none!important;
+    }
+    .btn_container{
+      display: none!important;
+
+    }
+    .endMenu{
+      display: none!important;
+
+    }
+  }
+  

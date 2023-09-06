@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import videojs from 'video.js';
 import 'video.js/dist/video-js.css';
 import VideoJS from './VideoJS';
+import './VideoPlayer.css'; 
 
 
 export const Video = () => {
@@ -23,8 +24,8 @@ export const Video = () => {
   return (
     <>
       
-      <video autoPlay playsInline muted  width={viewportSize.width}>
-  <source src="videos/promovideo.mp4" type="video/mp4" />
+      <video autoPlay playsInline muted  width="100%" >
+  <source src="videos/intro4K.mp4" type="video/mp4"  height="100%"  className='video'/>
 </video>
       
     </>

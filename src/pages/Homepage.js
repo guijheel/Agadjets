@@ -7,8 +7,7 @@ import Trait from "./compoments/trait";
 import Footer from "./compoments/Footer";
 import Satisfation from "./compoments/satisfation";
 import FooterII from "./compoments/FooterII";
-import AppleStyleCard from "./compoments/GridApple";
-
+ 
 const Homepage = () => {
   
   return (
